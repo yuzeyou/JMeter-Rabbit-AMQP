@@ -29,7 +29,7 @@
   <property name="src.java.version" value="1.8"/>
   <property name="encoding" value="UTF-8"/>
   <property name="includeAntRuntime" value="false"/>
-  <property name="ivy.install.version" value="2.3.0"/>
+  <property name="ivy.install.version" value="2.5.0"/>
   <property name="ivy.jar.dir" value="${basedir}/ivy"/>
   <property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar"/>
   
