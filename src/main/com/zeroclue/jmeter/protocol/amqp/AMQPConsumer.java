@@ -100,7 +100,8 @@ public class AMQPConsumer extends AMQPSampler implements Interruptible, TestStat
                  * Set up the sample result details
                  */
                 if (getReadResponseAsBoolean()) {
-                    String response = new String(delivery.getBody());
+                    String responseBefore = new String(delivery.getBody());
+                    String response = new String(responseBefore.getBytes("GBK"),"UTF-8");
                     result.setSamplerData(response);
                     result.setResponseMessage(response);
                 }
